@@ -1,3 +1,3 @@
-# homelab-instance-template
+# homelab-instance-tailscale-relay
 
-Template repo for managing an instance.
+Config for managing the `tailscale-relay` instance.
