@@ -1,11 +1,11 @@
 pm_host_port    = 8006
 pm_tls_insecure = true
 
-instance_domain = "" # CHANGEME
+instance_domain = "node.room101.a7d"
 
 clone         = "template-ubuntu-2004-base-image"
-target_node   = "" # CHANGEME
-resource_pool = "" # CHANGEME
+target_node   = "stor-01"
+resource_pool = "infrastructure"
 
 os_type                 = "cloud-init"
 cloudinit_cdrom_storage = "nfs-cloudinit"
@@ -13,7 +13,7 @@ citemplate_storage      = "nfs-cloudinit"
 
 resource_cpu_cores   = 1
 resource_cpu_sockets = 1
-resource_memory      = 2048
+resource_memory      = 1024
 
 # network config
 network_model = "virtio"
