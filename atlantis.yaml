@@ -1,6 +1,6 @@
 version: 3
 workflows:
-  tailscale-relay:
+  custom:
     plan:
       steps:
       - run: rm -rf .terraform
@@ -9,4 +9,4 @@ workflows:
 projects:
 - name: tailscale-relay
   dir: terraform
-  workflow: tailscale-relay
+  workflow: custom
