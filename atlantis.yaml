@@ -1,0 +1,12 @@
+version: 3
+workflows:
+  custom:
+    plan:
+      steps:
+      - run: rm -rf .terraform
+      - init:
+          extra_args: [-backend-config=/minio-backend-config/backend-config]
+projects:
+- name: tailscale-relay
+  dir: terraform
+  workflow: custom
